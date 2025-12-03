@@ -1,0 +1,8 @@
+[package]
+name = "common"
+version = "1.0.0"
+entrypoint = "lib.typ"
+authors = ["Woomymy"]
+license = "MIT"
+description = "Shared personnal stuff"
+
