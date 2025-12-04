@@ -38,7 +38,11 @@
         raw(strfmt("{} {}", command, args))
       }
     ) +
-    strfmt(": {}", desc)
+    if (desc != "") {
+      strfmt(": {}", desc)
+    } else {
+      ""
+    }
   )
 }
 
