@@ -1,17 +1,21 @@
- #let note_template(
+#import "@preview/glossy:0.9.0" : init-glossary
+
+#let note_template(
   pagetitle: "Prise de notes",
   outlinetitle: "Tables des matières",
   year: "2025-2026",
   classname: "Cours de",
   captionimages: true,
   centertables: true,
+  glossary: (),
+  ..args,
   doc
 ) = [
   #set page("a4")
   #set heading(numbering: "1.")
-
   #set document(title: pagetitle)
  
+  #show: init-glossary.with(glossary)
   #[
     #set par(spacing: 0.7em)
     #set page(background: line(start: (-45%, 0%), end: (-45%, 95%), stroke: (thickness: 4pt, paint: black, cap: "round")))
