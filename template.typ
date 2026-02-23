@@ -3,6 +3,7 @@
 #let note_template(
   pagetitle: "Prise de notes",
   outlinetitle: "Tables des matières",
+  outlineshow: true,
   year: "2025-2026",
   classname: "Cours de",
   captionimages: true,
@@ -30,8 +31,10 @@
     #pagebreak()
   ]
 
-  #outline(title: outlinetitle, depth: 4)
-  #pagebreak()
+  #if outlineshow [
+    #outline(title: outlinetitle, depth: 4)
+    #pagebreak()
+  ]
 
   // Réinitialisation du nombre de pages
   #counter(page).update(1)
