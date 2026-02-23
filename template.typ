@@ -17,20 +17,11 @@
     #set page(background: line(start: (-45%, 0%), end: (-45%, 95%), stroke: (thickness: 4pt, paint: black, cap: "round")))
     
     #align(horizon)[
-      #[
-        #show text: set text(size: 36pt, fill: color.darken(gray, 40%))
-        #classname
-      ]
+      #text(size: 36pt, fill: gray.darken(40%), classname)
 
-      #[
-        #show text: set text(size: 40pt)
-        #pagetitle
-      ]
+      #text(size: 36pt, pagetitle)
 
-      #[
-        #show text: set text(size: 36pt)
-        Notes
-      ]
+      #text(size: 36pt, "Notes")
     ]
     #pagebreak()
   ]
@@ -61,12 +52,12 @@
   }
 
   #show image: it => {
-      if captionimages {
-        let caption = if it.alt == none { it.source } else { it.alt }
-        figure(caption: caption, it)
-      } else {
-        it
-      }
+    if captionimages {
+      let caption = if it.alt == none { it.source } else { it.alt }
+      figure(caption: caption, it)
+    } else {
+      it
+    }
   }
   
   #show link: set text(fill: blue, weight: 700)
