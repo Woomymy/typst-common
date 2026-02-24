@@ -15,7 +15,9 @@
   #set page("a4")
   #set heading(numbering: "1.")
   #set document(title: pagetitle)
- 
+  #set text(font: "Liberation Sans")
+  #show raw: set text(font: "Liberation Mono")
+
   #show: init-glossary.with(glossary)
   #[
     #set par(spacing: 0.7em)
