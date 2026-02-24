@@ -1,6 +1,6 @@
+#import "@local/heh-template:1.0.0" : info, hint, important, silly
 #import "@preview/oxifmt:1.0.0": strfmt
 #import "math.typ" : xbar, ybar
-#import "blocks.typ" : hint, warning, info, todo
 #import "templates/note.typ" : note_template
 #import "templates/glossary.typ" : glossary_template
 

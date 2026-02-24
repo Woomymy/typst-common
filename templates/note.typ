@@ -59,7 +59,7 @@
   }
 
   #show image: it => {
-    if captionimages {
+    if captionimages and type(it.source) == str and not it.source.ends-with("svg") {
       let caption = if it.alt == none { it.source } else { it.alt }
       figure(caption: caption, it)
     } else {
