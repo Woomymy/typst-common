@@ -24,11 +24,11 @@
     #set page(background: line(start: (-45%, 0%), end: (-45%, 95%), stroke: (thickness: 4pt, paint: black, cap: "round")))
     
     #align(horizon)[
-      #text(size: 36pt, fill: gray.darken(40%), classname)
+      #text(size: 30pt, fill: gray.darken(40%), classname)
 
-      #text(size: 36pt, pagetitle)
+      #text(size: 30pt, pagetitle)
 
-      #text(size: 36pt, "Notes")
+      #text(size: 30pt, "Notes")
     ]
     #pagebreak()
   ]
