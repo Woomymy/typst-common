@@ -2,6 +2,7 @@
 
 #let note_template(
   pagetitle: "Prise de notes",
+  pagesubtitle: "Notes",
   outlinetitle: "Tables des matières",
   outlineshow: true,
   year: "2025-2026",
@@ -28,7 +29,7 @@
 
       #text(size: 30pt, pagetitle)
 
-      #text(size: 30pt, "Notes")
+      #text(size: 30pt, pagesubtitle)
     ]
     #pagebreak()
   ]
