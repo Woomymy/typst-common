@@ -7,6 +7,7 @@
 #import "templates/note.typ" : note_template
 #import "templates/glossary.typ" : glossary_template
 #import "templates/exercices.typ" : exercices_template
+#import "templates/simple_doc.typ"
 
 #let cmd(command, args, desc, os: "linux") = {
   text(
