@@ -55,7 +55,7 @@
    
   #show table: it => {
     if centertables {
-      align(center, it)
+      align(center, block(breakable: false, it))
     } else {
       it
     }
